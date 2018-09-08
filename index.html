@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Cloud OS</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+  
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div class="TB">
+  <a class="TBStart waves-effect waves-dark modal-trigger" href="#Start">
+    <img style="width:100%; padding:3px; border-radius:100px;" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/531144/LogoKeyon.png" />
+  </a>
+</div>
+
+<!-- Modal Structure -->
+<div id="modal-start" class="modal bottom-sheet">
+  <div class="modal-content">
+    <div align="center">
+      <img style="width:100px;" src="https://www.seeklogo.net/wp-content/uploads/2015/09/new-google-favicon-logo.png" />
+    </div>
+    <form style="width:500px; margin:0 auto;">
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="email" type="email" class="validate">
+          <label for="email">Search on web or device</label>
+        </div>
+        <div align="center">
+          <a style="width:150px;" class="waves-effect waves-light blue lighten-1 btn">Search</a>
+          <a style="width:150px;" href="#!" class="waves-effect waves-red modal-close grey grey-text lighten-5 btn">Close</a
+        </div>
+
+        </div>
+      </div>
+    </form>
+    </div>
+  </div>
+
+<div id="Start" class="modal modal-fixed-footer">
+  <div class="modal-content">
+    <div style="height:80px;" >
+      <img class="AvatarStart z-depth-1" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/531144/LogoKeyon.png" >
+      <p class="Pp">CloudOS</p>
+      <a onclick="FNA()" class="InfoA tooltipped waves-effect waves-default" data-position="right" data-delay="50" data-tooltip="Info / Change">Plan: 1TB 9,99$/month</a>
+          <a onclick="FNA()" class="waves-effect waves-red btn-flat red-text text-lighten-2 ExitA">Log out</a>
+        </div>
+        <table>
+          <tbody>
+            <tr>
+              <td class="FTD">Storage</td>
+              <td>550 GB used on 1 TB <a class="btn-flat waves-effect waves-default" onclick="FNA()">Upgrade</a></td>
+            </tr>
+            <tr>
+              <td class="FTD">Battery Optimizer</td>
+              <td>Activate Battery Optimizer <div class="switch">
+                  <label>
+                    Off
+                    <input type="checkbox">
+                    <span class="lever"></span>
+                    On
+                  </label>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="FTD">Version</td>
+              <td>1.0.3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Close</a>
+        <a href="#!" class="modal-action modal-close waves-effect waves-default blue-text btn-flat ">Save and Close</a>
+      </div>
+  </div>
+
+  <div id="InfoHD" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4>(C:) Files</h4>
+      <p>
+        Files (30%)
+        <svg style="width:24px;height:24px;" class="svgIHD" viewBox="0 0 24 24">
+            <path fill="#2196f3 " d="M13,9V3.5L18.5,9M6,2C4.89,2 4,2.89 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6Z" />
+        </svg>
+      </p>
+      <div class="progress blue lighten-3">
+          <div class="determinate blue" style="width: 30%"></div>
+      </div>
+      <p>Images (20%)
+        <svg style="width:24px;height:24px;" class="svgIHD" viewBox="0 0 24 24">
+            <path fill="#4caf50  " d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M6,20H15L18,20V12L14,16L12,14L6,20M8,9A2,2 0 0,0 6,11A2,2 0 0,0 8,13A2,2 0 0,0 10,11A2,2 0 0,0 8,9Z" />
+        </svg>
+      </p>
+      <div class="progress green lighten-3">
+          <div class="determinate green" style="width: 20%"></div>
+      </div>
+      <p>Video (3%)
+        <svg style="width:24px;height:24px;" class="svgIHD" viewBox="0 0 24 24">
+            <path fill="#f44336" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M17,19V13L14,15.2V13H7V19H14V16.8L17,19Z" />
+        </svg>
+      </p>
+      <div class="progress red lighten-3">
+          <div class="determinate red" style="width: 3%"></div>
+      </div>
+      <p>Recycle Bin (0%)
+        <svg style="width:24px;height:24px;" class="svgIHD" viewBox="0 0 24 24">
+            <path fill="#607d8b " d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z" />
+        </svg>
+      </p>
+      <div class="progress blue-grey lighten-3">
+          <div class="determinate blue-grey" style="width: 0%"></div>
+      </div>
+      <p>Used (53%)
+        <svg style="width:24px;height:24px;" class="svgIHD" viewBox="0 0 24 24">
+            <path fill="#673ab7 " d="M16.18,19.6L14.17,16.12C15.15,15.4 15.83,14.28 15.97,13H20C19.83,15.76 18.35,18.16 16.18,19.6M13,7.03V3C17.3,3.26 20.74,6.7 21,11H16.97C16.74,8.91 15.09,7.26 13,7.03M7,12.5C7,13.14 7.13,13.75 7.38,14.3L3.9,16.31C3.32,15.16 3,13.87 3,12.5C3,7.97 6.54,4.27 11,4V8.03C8.75,8.28 7,10.18 7,12.5M11.5,21C8.53,21 5.92,19.5 4.4,17.18L7.88,15.17C8.7,16.28 10,17 11.5,17C12.14,17 12.75,16.87 13.3,16.62L15.31,20.1C14.16,20.68 12.87,21 11.5,21Z" />
+        </svg>
+      </p>
+      <div class="progress deep-purple lighten-3">
+          <div class="determinate deep-purple" style="width: 53%"></div>
+      </div>
+      <p>Available (47%)
+        <svg style="width:24px;height:24px;" class="svgIHD" viewBox="0 0 24 24">
+            <path fill="#673ab7" d="M16.18,19.6L14.17,16.12C15.15,15.4 15.83,14.28 15.97,13H20C19.83,15.76 18.35,18.16 16.18,19.6M13,7.03V3C17.3,3.26 20.74,6.7 21,11H16.97C16.74,8.91 15.09,7.26 13,7.03M7,12.5C7,13.14 7.13,13.75 7.38,14.3L3.9,16.31C3.32,15.16 3,13.87 3,12.5C3,7.97 6.54,4.27 11,4V8.03C8.75,8.28 7,10.18 7,12.5M11.5,21C8.53,21 5.92,19.5 4.4,17.18L7.88,15.17C8.7,16.28 10,17 11.5,17C12.14,17 12.75,16.87 13.3,16.62L15.31,20.1C14.16,20.68 12.87,21 11.5,21Z" />
+        </svg>
+      </p>
+      <div class="progress deep-purple lighten-3">
+          <div class="determinate deep-purple" style="width: 47%"></div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-red btn-flat ">Close</a>
+    </div>
+  </div>
+
+  <div id="Icon1" class="Icon">
+    <svg style="margin:5px;" viewBox="0 0 24 24">
+    <path fill="#37474F" d="M3,4H21A1,1 0 0,1 22,5V16A1,1 0 0,1 21,17H22L24,20V21H0V20L2,17H3A1,1 0 0,1 2,16V5A1,1 0 0,1 3,4M4,6V15H20V6H4Z" />
+</svg>
+    <p class="ILabel">Computer</p>
+  </div>
+
+  <div id="Icon2" class="Icon">
+    <svg style="margin:5px;" viewBox="0 0 24 24">
+    <path fill="#FFB300" d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z" />
+</svg>
+    <p class="ILabel">Readme.txt</p>
+  </div>
+
+  <!--Window-->
+  <div id="set">
+    <div id="ComWin" class="ui-widget-content hidden">
+      <div class="z-depth-1" id="draggable">
+        <div class="content">
+          <div class="ctrlbar" id="ctrlbar">
+            <a class="btn bf"></a>
+            <a id="ClsBtn" class="waves-effect waves-light btn btn1 transparent z-depth-0">X</a>
+          </div>
+          <div class="filler">
+            <p class="Title">Computer</p>
+          </div>
+          <div class="row tb">
+            <div class="row">
+              <div class="col s12 m4 l5">
+
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">Local Disk (C:)</span>
+                    <p>550 GB available on 1 TB</p>
+                    <div class="progress">
+                      <div class="determinate" style="width: 56%"></div>
+                    </div>
+                  </div>
+                  <div class="card-action">
+                    <a href="#" onclick="Materialize.toast('Alreay opened', 4000)">Open</a>
+                    <a href="#InfoHD" class="modal-trigger">Info</a>
+                  </div>
+                </div>
+
+                <div class="card blue-grey darken-1">
+                  <div class="card-content white-text">
+                    <span class="card-title">DVD RW Drive (D:)</span>
+                    <p>No disk inside.</p>
+                  </div>
+                  <div class="card-action">
+                    <a href="#">Open tray</a>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col s12 m4 l7">
+                <div class="card blue-grey lighten-5">
+                  <div class="card-content blue-grey-text">
+                    <span class="card-title">Local Disk (C:)</span>
+                    <ul class="collapsible" data-collapsible="accordion">
+                      <li>
+                        <div class="collapsible-header"><i class="material-icons">airplay</i>Local</div>
+                        <div class="collapsible-body">
+                          <div class="row">
+
+                            <div class="Icon col s2 ">
+                              <svg style="margin:5px;" viewBox="0 0 24 24">
+                            <path fill="#37474F" d="M3,3H9V7H3V3M15,10H21V14H15V10M15,17H21V21H15V17M13,13H7V18H13V20H7L5,20V9H7V11H13V13Z" />
+                        </svg>
+                              <p style="padding:0em; margin-top:-15px;" class="LabelFolder">System</p>
+                            </div>
+
+                            <div class="Icon col s2">
+                              <svg style="margin:5px;" viewBox="0 0 24 24">
+                            <path fill="#37474F" d="M19,17H11V16C11,14.67 13.67,14 15,14C16.33,14 19,14.67 19,16M15,9A2,2 0 0,1 17,11A2,2 0 0,1 15,13A2,2 0 0,1 13,11C13,9.89 13.9,9 15,9M20,6H12L10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6Z" />
+                        </svg>
+                              <p style="padding:0em; margin-top:-15px;" class="LabelFolder">User</p>
+                            </div>
+
+                            <div class="Icon col s2 ">
+                              <svg style="margin:5px;" viewBox="0 0 24 24">
+                            <path fill="#37474F" d="M20,6A2,2 0 0,1 22,8V18A2,2 0 0,1 20,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4H10L12,6H20M19.25,13H16V9H14V13H10.75L15,17.25" />
+                        </svg>
+                              <p style="padding:0em; margin-top:-15px;" class="LabelFolder">Download</p>
+                            </div>
+
+                            <div class="Icon col s2 ">
+                              <svg style="margin:5px;" viewBox="0 0 24 24">
+                            <path fill="#37474F" d="M5,17L9.5,11L13,15.5L15.5,12.5L19,17M20,6H12L10,4H4A2,2 0 0,0 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8A2,2 0 0,0 20,6Z" />
+                        </svg>
+                              <p style="padding:0em; margin-top:-15px;" class="LabelFolder">Media</p>
+                            </div>
+
+                            <div class="Icon col s2 ">
+                              <svg style="margin:5px;" viewBox="0 0 24 24">
+                            <path fill="#37474F" d="M20,18H4V8H20M20,6H12L10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6Z" />
+                        </svg>
+                              <p style="padding:0em; margin-top:-15px;" class="LabelFolder">Empty</p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </li>
+                      <li>
+                        <div class="collapsible-header"><i class="material-icons">filter_drama</i>Cloud</div>
+                        <div class="collapsible-body">
+                          <div class="row">
+
+                            <div class="Icon col s2 ">
+                              <svg style="margin:5px;" viewBox="0 0 24 24">
+                            <path fill="#37474F" d="M13.75,9H16.14L19,14H16.05L13.5,9.46M18.3,17H12.75L14.15,14.5H19.27L19.53,14.96M11.5,17L10.4,14.86L13.24,9.9L14.74,12.56L12.25,17M20,6H12L10,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V8C22,6.89 21.1,6 20,6Z" />
+                        </svg>
+                              <p style="padding:0em; margin-top:-15px;" class="LabelFolder">Drive</p>
+                            </div>
+
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="NoteWin" class="ui-widget-content hidden">
+      <div class="z-depth-1" id="draggable2">
+        <div class="content">
+          <div class="ctrlbar" id="ctrlbar2">
+            <a class="btn bf"></a>
+            <a id="ClsBtn1" class="waves-effect waves-light btn btn1 transparent z-depth-0">X</a>
+          </div>
+          <div class="filler">
+            <p class="Title">Note</p>
+          </div>
+
+          <div class="fixed-action-btn horizontal right click-to-toggle" style="position:absolute; bottom:100px;">
+            <a class="btn-floating btn-large yellow darken-2">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul>
+              <li>
+                <a style="text-align:center;" class="btn-floating blue">
+                  <svg style="width:24px;height:24px; margin-top:5px;" viewBox="0 0 24 24">
+          <path fill="#fff" d="M15,9H5V5H15M12,19A3,3 0 0,1 9,16A3,3 0 0,1 12,13A3,3 0 0,1 15,16A3,3 0 0,1 12,19M17,3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V7L17,3Z" />
+      </svg>
+                </a>
+              </li>
+
+              <li>
+                <a style="text-align:center;" class="btn-floating blue">
+                  <svg style="width:24px;height:24px; margin-top:5px;" viewBox="0 0 24 24">
+          <path fill="#fff" d="M17,7V3H7V7H17M14,17A3,3 0 0,0 17,14A3,3 0 0,0 14,11A3,3 0 0,0 11,14A3,3 0 0,0 14,17M19,1L23,5V17A2,2 0 0,1 21,19H7C5.89,19 5,18.1 5,17V3A2,2 0 0,1 7,1H19M1,7H3V21H17V23H3A2,2 0 0,1 1,21V7Z" />
+      </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="fixed-action-btn">
+            <a class="btn-floating btn-large red">
+              <i class="large material-icons">mode_edit</i>
+            </a>
+            <ul>
+              <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+              <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+              <li><a style="text-align:center; font-weight:bold;" class="btn-floating green">B</a></li>
+              <li><a style="text-align:center;" class="btn-floating blue">A<span style="font-size:11px;">A</span></a></li>
+            </ul>
+          </div>
+          <div class="row ContentText z-depth-2">
+            <form class="col s12">
+              <div class="row">
+                <div class="input-field col s12">
+                  <textarea id="textarea1" class="TArea">
+                    If you ask yourself "Why should I need this?" the answer is:
+                    
+                    'Cause this can be cool at Cloud Storage, imagine to enter your Google Drive or DropBox and have a mini computer,
+                    with desktop, windows and other.
+                    It isn't more difficult to use, so why not?
+ 
+                    
+                    Hope you like it! :)
+					
+					-Prince Nitvik
+                  </textarea>
+                </div>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="ErrorWS" class="hidden">
+    <p>
+      Screen size is under 1024 x 768 <br/> Please use minimum 1024 x 768 <br /> Recommended resolution: 1920 x 1080 or scaled
+    </p>
+  </div>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js'></script>
+
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
